@@ -18,5 +18,11 @@ body {
 .siggie img { width: 320px; height: auto; border: 2px solid rgba(255,255,255,.25); box-shadow: 0 0 18px rgba(0,255,255,.35); border-radius: 10px; }
 
 footer { text-align: center; padding: 12px; color: #b5f4ff; background: rgba(0,0,0,.6); border-top: 1px solid rgba(255,255,255,.08); }
+/* GitHub-like footer */
+.site-footer { background:#0f1114; border-top:1px solid rgba(255,255,255,.06); color:#8b949e; }
+.site-footer .footer-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:20px; padding:14px 16px; flex-wrap:wrap; justify-content:flex-start; }
+.site-footer .brand { margin-right:auto; color:#c9d1d9; }
+.site-footer .footer-nav a { color:#8b949e; text-decoration:none; margin-right:18px; font-size:13px; }
+.site-footer .footer-nav a:hover { color:#c9d1d9; text-decoration:underline; }
 
 
