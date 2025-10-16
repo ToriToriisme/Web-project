@@ -1,18 +1,19 @@
 /* Base */
 *{box-sizing:border-box}
-body{background:#0b0b0f url('https://gamek.mediacdn.vn/133514250583805952/2021/10/2/photo-1-16331499528831433764921.jpg') center/cover no-repeat fixed;color:#e6e6e6;font-family:'Segoe UI',Tahoma,Verdana,sans-serif;margin:0}
+body{background:#0b0b0f url('https://i.imgur.com/9W2l0sB.png') center/cover no-repeat fixed;color:#e6e6e6;font-family:'Segoe UI',Tahoma,Verdana,sans-serif;margin:0;line-height:1.7}
 
 /* Headings */
 h2{width:96%;margin:12px auto 8px;background:linear-gradient(135deg,#00f0ff,#8a2be2);color:#0b0b0b;padding:10px 0 10px 16px;font-size:26px;font-style:italic;letter-spacing:.5px;text-indent:0;box-shadow:0 0 18px rgba(0,255,255,.35)}
 h3{width:92%;margin:16px 0 8px;padding:8px 0 8px 12px;background:linear-gradient(135deg,#00f0ff,#8a2be2);color:#0b0b0b;border-radius:6px}
 
 /* Links column */
-#links{float:left;width:220px;background:rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.15);padding:12px;margin:8px 16px;border-radius:10px;backdrop-filter:blur(2px);box-shadow:0 0 14px rgba(0,255,255,.15)}
+#links{float:left;width:260px;background:rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.15);padding:14px;margin:8px 20px;border-radius:10px;backdrop-filter:blur(2px);box-shadow:0 0 14px rgba(0,255,255,.15)}
 #links ul{list-style:disc inside;margin-left:8px}
 
 /* Content column */
-#noidung{margin-left:260px;padding-left:18px;border-left:3px solid rgba(0,255,255,.45)}
-#noidung .promo{float:right;width:300px;margin:6px 10px 12px 18px;border:1px solid rgba(255,255,255,.2);box-shadow:0 0 12px rgba(0,255,255,.25);border-radius:8px}
+#noidung{margin-left:320px;padding:0 24px 0 24px;border-left:3px solid rgba(0,255,255,.45)}
+#noidung .promo{float:right;width:360px;margin:6px 10px 12px 24px;border:1px solid rgba(255,255,255,.2);box-shadow:0 0 12px rgba(0,255,255,.25);border-radius:8px}
+ul li{margin:6px 0}
 
 /* Address/footer */
 address{text-align:center;border-top:2px solid rgba(0,255,255,.45);padding-top:12px;clear:all;margin:24px 12px 16px;color:#9ae6ff}
