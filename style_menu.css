@@ -1,0 +1,391 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.2;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #8B4513;
+    border-radius: 15px;
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        0 5px 15px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5em;
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-style: italic;
+    text-shadow: 
+        3px 4px 15px rgba(255, 182, 193, 0.6), 
+        1px 2px 8px rgba(255, 192, 203, 0.4),
+        0 0 20px rgba(139, 69, 19, 0.3);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Enhanced Navigation styles with CSS Box Model */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffb6c1 0%, #ffc0cb 100%);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+
+.home-icon {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+nav {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    transition: none;
+}
+
+nav a:hover {
+    color: rgb(40, 5, 122);
+    text-decoration: underline;
+}
+
+/* Vertical separators */
+.separator {
+    width: 1px;
+    height: 20px;
+    background-color: #8B4513;
+    margin: 0 1px;
+}
+
+/* Search Container with CSS Box Model */
+.search-container {
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-bar {
+    flex: 1;
+    max-width: 150px;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 0.9em;
+    outline: none;
+    background: white;
+    box-shadow: none;
+}
+
+#search-bar:focus {
+    border-color: #8B4513;
+    box-shadow: 
+        inset 0 2px 4px rgba(0, 0, 0, 0.1),
+        0 0 0 3px rgba(139, 69, 19, 0.2);
+}
+
+.search-container button {
+    padding: 5px 10px;
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 0.9em;
+    font-weight: normal;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.search-container button:hover {
+    background: #d0d0d0;
+}
+
+/* Enhanced Menu section styles with CSS Box Model */
+.menu-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #8B4513 0%, #DAA520 50%, #8B4513 100%);
+}
+
+.menu-section h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.8em;
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FFFACD 0%, #F0E68C 100%);
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #DAA520;
+    box-shadow: 
+        0 3px 8px rgba(218, 165, 32, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+/* Enhanced Menu items styles */
+.menu-items {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.menu-items li {
+    padding: 10px 15px;
+    font-size: 1em;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.menu-items li::before {
+    content: "🍽️ ";
+    color: #8B4513;
+    font-size: 1.1em;
+    margin-right: 8px;
+}
+
+.menu-items li:hover {
+    background: linear-gradient(135deg, #FFFACD 0%, #fff 100%);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.15);
+}
+
+.menu-items li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Enhanced Highlighted menu item */
+.highlighted {
+    font-weight: bold;
+    color: #8B4513;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #FFFACD 0%, #F0E68C 100%) !important;
+    border: 2px solid #DAA520 !important;
+    box-shadow: 
+        0 4px 12px rgba(218, 165, 32, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+    transform: scale(1.02);
+}
+
+/* Enhanced Vegetarian indicator */
+.veg-indicator {
+    color: #dc3545;
+    font-size: 0.9em;
+    font-weight: bold;
+    background: #fff;
+    padding: 2px 6px;
+    border-radius: 12px;
+    border: 1px solid #dc3545;
+    margin-left: 8px;
+    box-shadow: 0 1px 3px rgba(220, 53, 69, 0.2);
+}
+
+/* Enhanced Back to top links */
+.back-to-top {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.back-to-top a {
+    color: #dc3545;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid #dc3545;
+    border-radius: 20px;
+    background: #fff;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(220, 53, 69, 0.2);
+}
+
+.back-to-top a:hover {
+    color: #fff;
+    background: #dc3545;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(220, 53, 69, 0.3);
+}
+
+/* Enhanced Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 5px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .navbar .separator {
+        display: none;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul .separator {
+        display: none;
+    }
+    
+    nav a {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+    
+    .search-container {
+        flex-direction: row;
+        gap: 8px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #search-bar {
+        max-width: none;
+        flex: 1;
+    }
+    
+    .home-icon {
+        font-size: 1.3em;
+        padding: 6px 10px;
+    }
+    
+    .menu-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .menu-section h2 {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+    
+    .menu-items li {
+        padding: 8px 12px;
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .menu-section h2 {
+        font-size: 1.5em;
+    }
+    
+    .menu-items li {
+        font-size: 1em;
+    }
+}

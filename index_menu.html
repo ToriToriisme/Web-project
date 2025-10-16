@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Cafe Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EXAMPLE CAFE MENU</h1>
+            <div class="navbar">
+                <a href="index.html" class="home-icon">🏠</a>
+                <div class="separator"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#starter">Starter</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#main-courses">Main Courses</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#desserts">Desserts</a></li>
+                    </ul>
+                </nav>
+                <div class="separator"></div>
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search..." onkeyup="filterMenu()">
+                    <button type="button" onclick="clearSearch()">Go</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="starter" class="menu-section">
+                <h2>Starter</h2>
+                <ul class="menu-items">
+                    <li>Chesnut and Mushroom Goujons <span class="veg-indicator">(v)</span></li>
+                    <li>Goat Cheese <span class="veg-indicator">(v)</span></li>
+                    <li class="highlighted">HONEY SOY CHICKEN KEBABS <span class="veg-indicator">(v)</span></li>
+                    <li>Seafood Salad <span class="veg-indicator">(v)</span></li>
+                </ul>
+                <p class="back-to-top"><a href="#">Back to Top</a></p>
+            </section>
+
+            <section id="main-courses" class="menu-section">
+                <h2>Main Courses</h2>
+                <ul class="menu-items">
+                    <li>Grilled Salmon with Lemon Butter <span class="veg-indicator">(v)</span></li>
+                    <li>Beef Tenderloin with Red Wine Sauce <span class="veg-indicator">(v)</span></li>
+                    <li class="highlighted">VEGETARIAN LASAGNA <span class="veg-indicator">(v)</span></li>
+                    <li>Chicken Parmesan with Pasta <span class="veg-indicator">(v)</span></li>
+                    <li>Pan-Seared Duck Breast <span class="veg-indicator">(v)</span></li>
+                </ul>
+                <p class="back-to-top"><a href="#">Back to Top</a></p>
+            </section>
+
+            <section id="desserts" class="menu-section">
+                <h2>Desserts</h2>
+                <ul class="menu-items">
+                    <li>Lemon Sorbet <span class="veg-indicator">(v)</span></li>
+                    <li>Chocolate Mud Pie <span class="veg-indicator">(v)</span></li>
+                    <li>Pecan Pie <span class="veg-indicator">(v)</span></li>
+                    <li>Selection of fine Cheeses from Around the World <span class="veg-indicator">(v)</span></li>
+                </ul>
+                <p class="back-to-top"><a href="#">Back to Top</a></p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function filterMenu() {
+            const searchTerm = document.getElementById('search-bar').value.toLowerCase();
+            const menuItems = document.querySelectorAll('.menu-items li');
+            
+            menuItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function clearSearch() {
+            document.getElementById('search-bar').value = '';
+            const menuItems = document.querySelectorAll('.menu-items li');
+            menuItems.forEach(item => {
+                item.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
