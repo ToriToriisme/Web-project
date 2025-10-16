@@ -1,0 +1,22 @@
+/* Star linking hub styles */
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #2f4f2f;
+    background: #e8f0e8 url('background.jpg') top center / cover no-repeat fixed;
+}
+.hero { text-align: center; padding: 24px 12px; background: rgba(255,255,255,.8); border-bottom: 1px solid #cdd9cd; }
+.logo { width: 80px; height: auto; display: block; margin: 0 auto 6px; }
+.subtitle { color: #3c753c; margin-top: 4px; }
+
+.hub { max-width: 980px; margin: 30px auto; display: grid; place-items: center; gap: 24px; }
+.hub-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.btn { background: #2d7a35; color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.btn:hover { background: #25672c; }
+
+.siggie img { width: 280px; height: auto; border: 4px solid #fff; box-shadow: 0 4px 14px rgba(0,0,0,.15); border-radius: 6px; }
+
+footer { text-align: center; padding: 12px; color: #426942; background: rgba(255,255,255,.8); border-top: 1px solid #cdd9cd; }
+
+
