@@ -1,6 +1,6 @@
 /* Base */
 *{box-sizing:border-box}
-body{background:#0b0b0f url('https://i.imgur.com/9W2l0sB.png') center/cover no-repeat fixed;color:#e6e6e6;font-family:'Segoe UI',Tahoma,Verdana,sans-serif;margin:0;line-height:1.7}
+body{background:#0b0b0f url('gaming-bg.png') center/cover no-repeat fixed;color:#e6e6e6;font-family:'Segoe UI',Tahoma,Verdana,sans-serif;margin:0;line-height:1.7}
 
 /* Headings */
 h2{width:96%;margin:12px auto 8px;background:linear-gradient(135deg,#00f0ff,#8a2be2);color:#0b0b0b;padding:10px 0 10px 16px;font-size:26px;font-style:italic;letter-spacing:.5px;text-indent:0;box-shadow:0 0 18px rgba(0,255,255,.35)}
